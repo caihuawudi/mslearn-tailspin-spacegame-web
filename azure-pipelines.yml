@@ -8,8 +8,7 @@ trigger:
 
 pool:
   vmImage: 'ubuntu-20.04'
-  demands: Limit -equals DisAbleParallel 
-  - npm
+  demands: ['Limit -equals DisAbleParallel', '-npm']
 
 variables:
   buildConfiguration: 'Release'
